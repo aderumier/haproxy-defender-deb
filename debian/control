@@ -11,5 +11,4 @@ Standards-Version: 3.9.8
 Package: haproxy-defender
 Architecture: all
 Depends: ${misc:Depends}, libevent-pthreads-2.1-6, libapr1, libaprutil1
-
 Description: haproxy waf spoe
