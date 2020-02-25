@@ -2,8 +2,8 @@ include /usr/share/dpkg/pkg-info.mk
 
 PACKAGE=haproxy-defender
 
-SRCDIR=haproxy
-BUILDDIR=${SRCDIR}-${DEB_VERSION_UPSTREAM}
+SRCDIR=haproxy/contrib/mod_defender/
+BUILDDIR=haproxy-defender
 
 GITVERSION:=$(shell git rev-parse HEAD)
 
@@ -21,7 +21,7 @@ ${BUILDDIR}: submodule
 	rm -rf $(BUILDDIR)
 	mkdir $(BUILDDIR)
 	cp -a $(SRCDIR)/* $(BUILDDIR)/
-	cp -R debian/* $(BUILDDIR)/debian/
+	cp -R debian $(BUILDDIR)/
 
 .PHONY: deb
 deb: ${DEB}
