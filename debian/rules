@@ -8,6 +8,7 @@ override_dh_auto_install:
 	mkdir -p debian/haproxy-defender/usr/bin
 	mkdir -p debian/haproxy-defender/lib/systemd/system/
 	mkdir -p debian/haproxy-defender/etc/haproxy-defender
+	mkdir -p /var/log/haproxy-defender
 	install --mode=644 debian/haproxy-defender.service debian/haproxy-defender/lib/systemd/system/
 	install --mode=644 debian/defender.cfg debian/haproxy-defender/etc/haproxy-defender/defender.cfg
 	install --mode=644 debian/core.rules debian/haproxy-defender/etc/haproxy-defender/core.rules
