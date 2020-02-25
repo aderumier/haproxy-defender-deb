@@ -1,0 +1,5 @@
+haproxy_defender (1.0.0-1+odiso) pve; urgency=medium
+
+  * Initial release
+
+ -- Odiso Team <heb@odiso.com>  Tue, 25 Feb 2020 10:53:43 +0100

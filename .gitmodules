@@ -1,0 +1,3 @@
+[submodule "haproxy"]
+	path = haproxy
+	url = https://github.com/haproxy/haproxy
