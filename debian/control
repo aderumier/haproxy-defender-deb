@@ -5,10 +5,11 @@ Maintainer: Alexandre Derumier <aderumier@odiso.com>
 Build-Depends: debhelper (>=9),
                libevent-pthreads-2.1-6,
                libapr1-dev,
-               libaprutil1-dev
+               libaprutil1-dev,
+               libevent-dev
 Standards-Version: 3.9.8
 
 Package: haproxy-defender
 Architecture: all
-Depends: ${misc:Depends}, libevent-pthreads-2.1-6, libapr1, libaprutil1
+Depends: ${misc:Depends}, libevent-pthreads-2.1-6, libapr1, libaprutil1, apache2-dev
 Description: haproxy waf spoe

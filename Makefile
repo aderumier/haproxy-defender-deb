@@ -22,6 +22,7 @@ ${BUILDDIR}: submodule
 	mkdir $(BUILDDIR)
 	cp -a $(SRCDIR)/* $(BUILDDIR)/
 	cp -R debian $(BUILDDIR)/
+	cp -R mod_defender $(BUILDDIR)/
 
 .PHONY: deb
 deb: ${DEB}
