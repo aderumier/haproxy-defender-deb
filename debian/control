@@ -1,4 +1,4 @@
-Source: haproxy_defender
+Source: haproxy-defender
 Section: admin
 Priority: optional
 Maintainer: Alexandre Derumier <aderumier@odiso.com>

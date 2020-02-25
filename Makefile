@@ -1,6 +1,6 @@
 include /usr/share/dpkg/pkg-info.mk
 
-PACKAGE=haproxy_defender
+PACKAGE=haproxy-defender
 
 SRCDIR=haproxy
 BUILDDIR=${SRCDIR}-${DEB_VERSION_UPSTREAM}
