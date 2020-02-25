@@ -39,7 +39,7 @@ distclean: clean
 
 .PHONY: clean
 clean:
-	rm -rf ${PACKAGE}-*/ *.deb *.changes *.dsc *.buildinfo
+	rm -rf ${PACKAGE}/ *.deb *.changes *.dsc *.buildinfo
 
 .PHONY: dinstall
 dinstall: deb
