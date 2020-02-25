@@ -1,0 +1,6 @@
+[submodule "mod_defender"]
+	path = mod_defender
+	url = https://github.com/VultureProject/mod_defender
+[submodule "haproxy"]
+	path = haproxy
+	url = https://github.com/haproxy/haproxy
