@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+#export MOD_DEFENDER_SRC=./mod_defender
+%:
+	dh $@ --sourcedirectory=contrib/mod_defender
+
+override_dh_auto_install:
+	mkdir -p debian/haproxy-defender/usr/local/bin/
+	dh_install
+
