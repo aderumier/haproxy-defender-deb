@@ -1,0 +1,7 @@
+[Unit]
+After=network.target network-online.target
+
+[Service]
+ExecStart=/usr/bin/defender -f /etc/haproxy-defender/defender.cfg
+RemainAfterExit=true
+TimeoutStartSec=2min
